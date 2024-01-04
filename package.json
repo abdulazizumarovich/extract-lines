@@ -1,0 +1,25 @@
+{
+  "name": "extract-lines",
+  "main": "./lib/extract-lines",
+  "version": "0.0.0",
+  "description": "Extracts lines matching a pattern to a new tab",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "extract-lines:extract"
+  },
+  "repository": "https://github.com/abdulazizumarovich/extract-lines",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "configSchema": {
+    "pattern": {
+      "type": "string",
+      "default": "",
+      "description": "Permanent pattern to be used for line extraction"
+    }
+  }
+}

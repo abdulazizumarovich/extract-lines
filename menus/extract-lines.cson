@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Call extract-lines'
+      'command': 'extract-lines:extract'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'extract-lines'
+      'submenu': [
+        {
+          'label': 'Extract'
+          'command': 'extract-lines:extract'
+        }
+      ]
+    ]
+  }
+]
